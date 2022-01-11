@@ -18,7 +18,7 @@ public class Ex6 {
             System.out.print("Nhập phần tử thứ " + (i + 1) +" : ");
             a[i] = sc.nextInt();
         }
-        int []b=new int [n+1];
+        int []b = new int [n+1];
         for(int i = 0; i < n; i++)
         {
             b[i] = a[i];

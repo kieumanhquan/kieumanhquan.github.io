@@ -2,6 +2,7 @@ package Basic;
 
 public class Ex9 {
     public static void main(String[] args) {
+        System.out.println("Các số nguyên có 7 đến 9 chữ số thoả mãn cả 3 điều kiện:");
         for (int i = 1000000; i <= 999999999; i++) {
             if (isReversible(i) && checkSum(i) % 10 == 0 && checkNumber(i)) {
                 System.out.println(i);
@@ -35,9 +36,9 @@ public class Ex9 {
     //kiểm tra các số có chứa 3 số 0, 6, 8
     private static boolean checkNumber(int n) {
         int temp;
-        while (n>0){
-            temp = n%10;
-            if (temp !=0 && temp!=6 && temp!=8){
+        while (n > 0){
+            temp = n % 10;
+            if (temp != 0 && temp!= 6 && temp!= 8){
                 return false;
             }
             n /= 10;

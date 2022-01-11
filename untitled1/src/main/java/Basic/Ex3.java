@@ -7,9 +7,9 @@ public class Ex3 {
         int a;
         int b;
         do {
-            System.out.println("Nhập số thứ nhất: ");
+            System.out.print("Nhập a: ");
             a = new Scanner(System.in).nextInt();
-            System.out.println("Nhập số thứ hai: ");
+            System.out.print("Nhập b: ");
             b = new Scanner(System.in).nextInt();
         } while (a <= 0 || b <= 0);
         int s = a * b;

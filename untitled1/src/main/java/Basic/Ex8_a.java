@@ -2,6 +2,7 @@ package Basic;
 
 public class Ex8_a {
     public static void main(String[] args) {
+        System.out.println("Các số thuận nghịch có sáu chữ số: ");
         for (int i = 100000; i <= 999999; i++) {
             if (isReversible(i)) {
                 System.out.println(i);

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ex1_a {
     public static void main(String[] args) {
+        System.out.print("Nhập số nguyên n: ");
         int n = new Scanner(System.in).nextInt();
         if(n % 2 == 0){
             calculateEvenNumber(n);
@@ -18,7 +19,7 @@ public class Ex1_a {
         for (int i = 2; i <= n; i += 2){
             sum += i;
         }
-        System.out.println(sum);
+        System.out.println("Tổng các số chẵn  là: " + sum);
     }
 
     private static void calculateOddNumber(int n) {
@@ -26,6 +27,6 @@ public class Ex1_a {
         for (int i = 1; i <= n; i += 2){
             sum += i;
         }
-        System.out.println(sum);
+        System.out.println("Tổng các số lẻ  là: " + sum);
     }
 }

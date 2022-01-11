@@ -2,6 +2,7 @@ package Basic;
 
 public class Ex8_b {
     public static void main(String[] args) {
+        System.out.println("Các số thuận nghịch có sáu chữ số, tổng chữ số chia hết cho 10: ");
         for (int i = 100000; i <= 999999; i++) {
             if (isReversible(i) && checkSum(i) % 10 == 0) {
                 System.out.println(i);
@@ -20,7 +21,7 @@ public class Ex8_b {
         return revert == n;
     }
 
-    //kiểm tra tổng của các chưx số chia hết cho 10
+    //kiểm tra tổng của các chữ số chia hết cho 10
     private static int checkSum(int n) {
         int temp;
         int sum = 0;

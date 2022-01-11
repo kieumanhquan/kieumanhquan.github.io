@@ -44,8 +44,8 @@ public class Ex8 {
         Scanner sc = new Scanner(System.in);
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
-                System.out.print("Nhâp phần tử tại vị trí [ "+ i +" ] [ "+ j +" ] : ");
-                result[i][j] =sc.nextInt();
+                System.out.print("Nhập phần tử tại vị trí [ "+ i +" ] [ "+ j +" ] : ");
+                result[i][j] = sc.nextInt();
             }
         }
         return result;
@@ -55,7 +55,7 @@ public class Ex8 {
     public static void xuat(int[][] a) {
         for(int [] x : a) {
             for(int y : x)
-                System.out.print(y +" ");
+                System.out.print(y + " ");
             System.out.println(" ");
         }
     }

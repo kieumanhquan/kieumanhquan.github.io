@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Ex5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập số nguyên:");
+        System.out.print("Nhập số nguyên:");
         int n = sc.nextInt();
-        int tong  =0;
-        int sodu;
+        int sum  =0;
+        int surplus;
         while(n > 0) {
-            sodu = n % 10;
+            surplus = n % 10;
             n = n / 10;
-            tong += sodu;
+            sum += surplus;
         }
-        System.out.println("Tổng : " + tong);
+        System.out.println("Tổng các chữ số bằng: " + sum);
     }
 }

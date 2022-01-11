@@ -9,7 +9,7 @@ public class Ex1 {
         int[] a = new int [n];
         int check = 1;
         for (int i = 0; i < n; i++){
-            System.out.print("Nhập số thứ " + i + " : ");
+            System.out.print("Nhập số thứ " + (i + 1) + " : ");
             a[i] = new Scanner(System.in).nextInt();
         }
         for (int i = 0; i < n / 2; i++) {
@@ -19,14 +19,14 @@ public class Ex1 {
             }
         }
         if (check == 1){
-            System.out.print("[");
+            System.out.print("Mảng [");
             for ( int i = 0; i <= n - 1; i++) {
                 System.out.print(a[i] + " ");
             }
             System.out.print("] là mảng đối xứng");
         }
         else {
-            System.out.print("[");
+            System.out.print("Mảng [");
             for ( int i = 0; i <= n - 1; i++) {
                 System.out.print(a[i] + " ");
             }

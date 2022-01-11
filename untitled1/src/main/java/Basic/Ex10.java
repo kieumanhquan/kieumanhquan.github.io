@@ -4,6 +4,7 @@ import static java.lang.Math.sqrt;
 
 public class Ex10 {
     public static void main(String[] args) {
+        System.out.println("Các số nguyên có 7 chữ số thoả mãn cả 3 điều kiện:");
         for (int i = 1000000; i <= 9999999; i++) {
             if (isPrimeNumber(i) && checkNumber(i) && isReversible(i)) {
                 System.out.println(i);
@@ -25,12 +26,12 @@ public class Ex10 {
     //kiểm tra các chữ số trong số đó là số nguyên tố
     private static boolean checkNumber(int n) {
         int temp;
-        while(n>0){
-            temp = n%10;
-            if(!isPrimeNumber(temp)){
+        while(n > 0){
+            temp = n % 10;
+            if(! isPrimeNumber(temp)){
                 return false;
             }
-            n/=10;
+            n /= 10;
         }
         return true;
     }
@@ -39,7 +40,7 @@ public class Ex10 {
     private static boolean isReversible(int n) {
         int revert = 0;
         int m = n;
-        while(m >0){
+        while(m > 0){
             revert = revert * 10 + m % 10;
             m /= 10;
         }
